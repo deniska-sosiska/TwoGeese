@@ -1,0 +1,60 @@
+@font-face {   /*RotondaC*/
+  font-family: 'RotondaC';
+  src: url('../fonts/RotondaC/RotondaC.svg#RotondaC') format('svg'),
+       url('../fonts/RotondaC/RotondaC.ttf') format('truetype'),
+       url('../fonts/RotondaC/RotondaC.woff')  format('woff');
+}
+@font-face { /*RotondaBold*/
+  font-family: 'RotondaBold';
+  src: url('../fonts/RotondaBold/RotondaBold.svg#RotondaBold') format('svg'),
+       url('../fonts/RotondaBold/RotondaBold.ttf') format('truetype'),
+       url('../fonts/RotondaBold/RotondaBold.woff')  format('woff');
+}
+
+body {
+  background-color: #fff8dd;
+}
+
+header {
+  background: url("../img/background-head.png") repeat;
+  height: 237px;
+}
+
+footer {
+  background: url("../img/background-footer.png") repeat;
+  height: 180px;
+}
+
+ul {
+  padding-left: 10px;
+  text-align: left;
+  list-style: none outside;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+
+
+.Name {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.Name h4 {
+	margin-left: 10px;
+	color: #2d5d7e;
+	font-family: RotondaBold;
+}
+
+.container {
+  max-width: 982px;
+}
+
+.col-lg-3 {
+  border: solid 1px;
+  height: auto;
+}
