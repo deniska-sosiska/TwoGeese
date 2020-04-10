@@ -13,16 +13,19 @@
 
 body {
   background-color: #fff8dd;
+  -webkit-overflow-scrolling: touch;
 }
 
 header {
   background: url("../img/background-head.png") repeat;
   height: 237px;
+  margin-bottom: 100px;
 }
 
 footer {
   background: url("../img/background-footer.png") repeat;
   height: 180px;
+  margin-top: 100px;
 }
 
 ul {
@@ -36,7 +39,9 @@ a {
   display: inline-block;
   color: black;
 }
-
+a:hover {
+  color: black;
+}
 
 .Name {
 	display: flex;
@@ -50,11 +55,118 @@ a {
 	font-family: RotondaBold;
 }
 
-.container {
-  max-width: 982px;
+.object p {
+  padding: 0 10px;
+	margin-top: 3;
+	font-family: RotondaBold;
 }
 
-.col-lg-3 {
-  border: solid 1px;
-  height: auto;
+.container {
+  max-width: 1100px;
+}
+
+.row {
+  /* border: solid 1px; */
+}
+
+.hi {
+  /* border: ridge 3px; */
+}
+
+.object {
+  /* border: solid 1px; */
+  padding-bottom: 20px;
+}
+
+.advertising {
+  /* padding: 0; */
+  margin: 0;
+  /* border: solid 1px; */
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.cloud {
+  padding: 15% 23%;
+  margin: 0px;
+  /* border: solid 1px; */
+  background: url('../img/cloud.png')  no-repeat center/100%;
+  width: 100%;
+	background-size: contain;
+  -webkit-background-size: contain;
+}
+
+.cloud p {
+  font-size: 14px;
+  font-family: RotondaC;
+  margin: 0px;
+  /* width: 100%; */
+}
+
+.cloud button {
+  background: #3da0d1;
+  line-height: 10%;
+  height: 35px;
+  margin-top: 10px;
+  margin-left: 8px;
+  font-family: RotondaC;
+  font-weight: bold;
+  border: 2px solid #c5e5f9;
+  border-radius: 40px;
+}
+.cloud button:hover {
+	background: #278dc0;
+	border: 2px solid #3da0d1;
+}
+
+
+
+.background_blank {
+  padding-top: 30px;
+  padding-left: 20px;
+	margin-top: 20px;
+	margin-left: 15px;
+	height: auto;
+	background: url('../img/background_blank.png') no-repeat;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	padding-bottom:20%;
+}
+
+.Delivery_Advertising {
+  margin-top: 25px;
+	margin-left: 15px;
+}
+
+.Delivery_Advertising img {
+  width: 100%;
+}
+
+.date {
+	background: url('../img/date.png') no-repeat;
+	background-size: 100% 100%;
+	width: 50%;
+	height: 2rem;
+	line-height: 200%;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	padding:
+}
+
+.news h6 {
+	margin: 0;
+	padding: .5rem 0;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #2d5d7e;
+}
+
+.news a {
+	text-decoration: underline;
+}
+
+.news>a {
+	color: #2d5d7e;
 }
