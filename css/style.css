@@ -70,7 +70,7 @@ a:hover {
 }
 
 .hi {
-  /* border: ridge 3px; */
+  border: ridge 3px;
 }
 
 .object {
@@ -85,6 +85,7 @@ a:hover {
   margin-top: 40px;
   margin-bottom: 40px;
   width: 100%;
+  text-align: -webkit-center;
 }
 
 .cloud {
@@ -120,8 +121,6 @@ a:hover {
 	border: 2px solid #3da0d1;
 }
 
-
-
 .background_blank {
   padding-top: 30px;
   padding-left: 20px;
@@ -137,10 +136,20 @@ a:hover {
 .Delivery_Advertising {
   margin-top: 25px;
 	margin-left: 15px;
+  border: solid 1px;
+  text-align: -webkit-center;
+
 }
 
 .Delivery_Advertising img {
   width: 100%;
+  background-size: contain;
+  -webkit-background-size: contain;
+  /* height: 160px; */
+}
+
+.news h4, .brand h4 {
+
 }
 
 .date {
