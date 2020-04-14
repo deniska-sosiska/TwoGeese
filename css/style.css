@@ -10,6 +10,12 @@
        url('../fonts/RotondaBold/RotondaBold.ttf') format('truetype'),
        url('../fonts/RotondaBold/RotondaBold.woff')  format('woff');
 }
+@font-face {
+  font-family: 'Trebuchet';
+  src: url("../fonts/Trebuchet/Trebuchet.svg#Trebuchet") format("svg"),
+       url("../fonts/Trebuchet/Trebuchet.ttf") format('truetype'),
+       url('../fonts/Trebuchet/Trebuchet.woff')  format('woff');
+}
 
 .container {
   max-width: 1100px;
@@ -18,6 +24,7 @@
 body {
   background-color: #fff8dd;
   -webkit-overflow-scrolling: touch;
+	font-family: Trebuchet;
 }
 header {
   background: url("../img/background-head.png") repeat;
@@ -91,11 +98,19 @@ a:hover {
   border: 2px solid #c5e5f9;
   border-radius: 40px;
 }
-.cloud button:hover {
+.cloud button:hover,
+.cloud button:active {
 	color: #278dc0;
 	border: 2px solid #3da0d1;
   background-color: #fff;
 }
+.cloud button:target {
+	color: #fff;
+	border: 2px solid #fff;
+  background-color: #fff;
+}
+
+
 
 .background_blank {
   padding-top: 30px;
@@ -123,8 +138,6 @@ a:hover {
   flex-direction: column;
 }
 .news h4, .brand h4 {
-  /* display: inline-block; */
-  /* justify-content: center; */
   align-self: center;
 }
 .date {
@@ -162,13 +175,61 @@ a:hover {
 }
 
 footer {
-  background: url("../img/background-footer.png") repeat;
-  height: 180px;
-  margin-top: 100px;
+  background: url("../img/background-footer.png") 0 30px repeat-x;
+  height: 211px;
+  margin-top: 50px;
+  border: solid 1px;
+}
+footer .p {
+  color: #2d5d7e;
+  font-family: "RotondaBold";
+  font-size: 26px;
+}
+footer i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+footer span {
+    color: #06465f;
+}
+.foot  {
+  margin-top: 30px;
+  /* min-height: 180px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot:last-child {
+  margin: 0;
+}
+
+.bg_for_i {
+  background-color: #fff;
+  padding: 0;
+  border-radius: 100px;
+  margin: 3px;
+}
+.bg_for_i i {
+  font-size: 16px;
+  color: #afcede;
+  padding: 8px;
+  margin: 0;
+}
+.logo_footer {
+  /* border: solid 1px; */
+}
+.logo_footer img {
+  width: 100%;
+  /* border: solid 1px; */
+}
+
+.borders {
+  /* border: 1px solid; */
 }
 
 
 
+/* img-responsive, img-fluid в отпуске */
 @media screen and (max-width: 1024px){
   .Delivery_Advertising img {
     height: 115px;
@@ -191,7 +252,7 @@ footer {
 }
 @media screen and (max-width: 768px){
   .Delivery_Advertising img {
-    height: 130px;
+    height: 140px;
   }
 }
 @media screen and (max-width: 663px){
