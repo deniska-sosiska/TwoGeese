@@ -504,13 +504,42 @@ footer .span_phone {
   font-size: 17px;
   font-weight: 700;
 }
+
 .info_tovar {
   display: flex;
   background: url('../img/bg_for_tovar.png') no-repeat center/100%;
   width: 681px;
   min-height: 262px;
 }
+.info_tovar_img img {
+  width: 205px;
+  height: 206px;
+  margin: 25px 15px 30px;
+}
 
+.info_tovar_li1, .info_tovar_li2 {
+  margin-top: 31px;
+  color: #1a1a18;
+  font-family: "Trebuchet";
+  font-size: 14px;
+  font-weight: 400;
+}
+.info_tovar_li1 li, .info_tovar_li2 li ..info_tovar_li3 li{
+  width: 100%;
+  border-bottom: 1px dotted;
+}
+.info_tovar_li1 {
+  /* padding-right: 30px; */
+}
+.info_tovar_price {
+
+}
+
+.hi {
+  display: flex;
+  justify-content: center;
+  border: solid 1px;
+}
 
 
 
