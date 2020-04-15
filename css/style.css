@@ -85,6 +85,10 @@ header {
   font-weight: 400;
   text-decoration: none;
 }
+.bt a:hover {
+  font-size: 14px;
+  color: #17577a;
+}
 .bt i {
   margin-right: 10px;
 }
@@ -113,7 +117,7 @@ header {
   font-family: "RotondaBold";
   font-size: 26px;
 }
-header .span_phone {
+header  .span_phone {
     color: #4a8cbf;
 }
 .bg_head {
@@ -153,7 +157,7 @@ header .span_phone {
   color: #3a617f;
 }
 .for_p2 a:hover {
-  color: #3a617f;
+  color: #305069;
 }
 
 
@@ -306,7 +310,7 @@ footer {
   margin-top: 50px;
   /* border: solid 1px; */
 }
-footer i {
+footer  i {
   font-size: 24px;
   margin-right: 10px;
 }
