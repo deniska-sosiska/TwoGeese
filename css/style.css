@@ -631,43 +631,13 @@ footer .span_phone {
 .blank {
   background: url('../img/bg_blank_main.png') no-repeat;
   background-size: 100% 100%;
-  /* border: solid 1px; */
-}
-.filter {
-  /* border: solid 1px; */
   width: 231px;
-  height: 263px;
-  /* margin-top: 15px; */
-  /* margin-bottom: 15px; */
-}
-.kind_of {
+  height: auto;
+  padding-bottom: 40px;
   /* border: solid 1px; */
-  width: 231px;
-  height: 345px;
-  /* margin-top: 15px; */
-  /* margin-bottom: 15px; */
 }
-.main .brand {
-  /* border: solid 1px; */
-  width: 231px;
-  height: 382px;
-  /* margin-top: 15px; */
-  /* margin-bottom: 15px; */
-}
-.characteristic {
-  /* border: solid 1px; */
-  width: 231px;
-  height: 352px;
-  /* margin-top: 15px; */
-  /* margin-bottom: 15px; */
-}
-.main .catalog {
-  /* border: solid 1px; */
-  width: 231px;
-  height: 418px;
-  /* margin-top: 15px; */
-  /* margin-bottom: 85px; */
-}
+
+
 .blank_title {
   text-align: center;
   padding-right: 20px;
@@ -684,10 +654,28 @@ footer .span_phone {
 
 
 
+.parent {
+  background: url('../img/plus.png') 0 3px no-repeat;
+  /* border: solid 1px; */
+  padding-left: 20px;
+  margin-bottom: 3px;
+  display: block;
+}
+.parent:hover {
+  cursor: pointer;
+}
+.filter > ul >li.parent + .active {
+  background: url('../img/minus.png') 0 3px no-repeat;
+  background-color: #b3e6ff;
+}
 
 
-
-
+.filter > ul > li > ul.child {
+  display: none;
+}
+.filter > ul > li.active >ul.active{
+  display:  block;
+}
 
 
 
