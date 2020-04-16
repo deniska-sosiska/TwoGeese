@@ -587,3 +587,54 @@ footer .span_phone {
 .info_tovar_price_price a:hover {
   text-decoration: none;
 }
+
+
+.end {
+  background: url('../img/bg_for_start.png') 0 0 no-repeat ;
+  width: 681px;
+  height: 64px;
+
+}
+.end input {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 13px;
+  padding-right: 13px;
+  background-color: #cae5ee;
+  border: none;
+  color: #1a1a18;
+  font-family: "Trebuchet";
+  font-size: 15px;
+  font-weight: 400;
+}
+.end input:hover {
+  font-size: 16px;
+}
+.s {
+  border-radius: 100%;
+}
+.b {
+  border-radius: 40%;
+}
+.b10 {
+  margin-left: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end */
