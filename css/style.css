@@ -31,21 +31,9 @@ header {
   height: 237px;
   margin-bottom: 100px;
 }
-/* all {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  border: solid 1px;
-  min-height: 100%;
-} */
 section .main {
-  /* flex: 1 0  auto; */
   padding: 0;
   margin: 0;
-}
-footer {
-  flex: 0 0 auto;
 }
 
 
@@ -516,34 +504,86 @@ footer .span_phone {
   height: 206px;
   margin: 25px 15px 30px;
 }
-
-.info_tovar_li1, .info_tovar_li2 {
-  margin-top: 31px;
-  color: #1a1a18;
-  font-family: "Trebuchet";
-  font-size: 14px;
-  font-weight: 400;
-}
-.info_tovar_li1 li, .info_tovar_li2 li ..info_tovar_li3 li{
-  width: 100%;
-  border-bottom: 1px dotted;
-}
-.info_tovar_li1 {
-  /* padding-right: 30px; */
-}
 .info_tovar_price {
 
 }
 
-.hi {
+.lines {
+  margin-top: 31px;
+}
+.line {
   display: flex;
-  justify-content: center;
-  border: solid 1px;
+  width: 280px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1a1a18;
+  font-family: "Trebuchet";
+}
+.line {
+  border-bottom: 1px dashed grey;
+}
+.line1 {
+  width: 175px;
+}
+.line2 {
+  padding-left: 10px;
+}
+.lines_v_korziny {
+  background: url('../img/bg_price_yellow.png') -1px 0 no-repeat;
+  width: 134px;
+  height: 35px;
+  margin: 15px 0px 34px;
+  border:  dashed 1px yellow;
+  border-radius: 17px 0 17px 0;
+}
+.lines_v_korziny_a:hover {
+  text-decoration: none;
+}
+.lines_btn_v_korziny {
+  margin: 5px 10px 9px 19px;
+  color: #3b3a39;
+  font-family: "RotondaBold";
+  font-size: 15px;
+  font-weight: 700;
+}
+.lines_btn_v_korziny i {
+  margin-right: 5px;
 }
 
+.info_tovar_price {
+  margin: 33px 0px 30px 25px;
+}
+.info_tovar_price_status {
+  color: #aec905;
+  font-family: "Trebuchet";
+  font-size: 14px;
+  font-weight: 700;
+}
+.info_tovar_price_status i {
+  margin-right: 7px;
+  font-size: 16px;
+}
 
-
-
-.main .col-lg-12 {
-  /* border: solid 1px; */
+.info_tovar_price_procherk {
+  text-decoration: line-through;
+  margin-top: 10px;
+  margin-bottom: 11px;
+  margin-left: 20px;
+}
+.info_tovar_price_price {
+  background: url('../img/bg_price_blue.png') -1px 0 no-repeat;
+  width: 108px;
+  height: 35px;
+  border:  dashed 1px #8ecef0;
+  border-radius: 17px 0 17px 0;
+}
+.info_tovar_price_price_p {
+  color: #ffffff;
+  font-family: "RotondaBold";
+  font-size: 18px;
+  font-weight: 700;
+  margin: 3px 0px 0px 20px;
+}
+.info_tovar_price_price a:hover {
+  text-decoration: none;
 }
