@@ -433,7 +433,7 @@ footer .span_phone {
   }
 }
 
-/*=============================== /index.html=================================================*/
+/*=============================== /index.html===product page===================================*/
 
 .main h1 {
   color: #2d5d7e;
@@ -584,10 +584,9 @@ footer .span_phone {
   font-weight: 700;
   margin: 3px 0px 0px 20px;
 }
-.info_tovar_price_price a:hover {
+.info_tovar_price > a:hover {
   text-decoration: none;
 }
-
 
 .end {
   background: url('../img/bg_for_start.png') 0 0 no-repeat ;
@@ -677,7 +676,7 @@ footer .span_phone {
   display:  block;
 }
 
-
+/*====================/product page=========product selection.html *==============/
 
 
 
