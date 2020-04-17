@@ -199,15 +199,20 @@ a:hover {
 	justify-content: flex-start;
 }
 .Name img {
-  min-width: 60px
+  min-width: 60px;
 }
 .Name > a {
-  /* display: inline; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.Name > a:hover {
+  text-decoration: none;
 }
 .Name h4 {
 	margin-left: 10px;
 	color: #2d5d7e;
-	font-family: RotondaBold;
+	font-family: 'RotondaBold';
 }
 .object_li p {
   padding: 0 10px;
@@ -812,5 +817,6 @@ p + .your_purchase {
   font-weight: 400;
   margin-left: 10px;
 }
+/*=====================/purchase===============================================*/
 
 /* end */
