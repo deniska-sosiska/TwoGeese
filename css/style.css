@@ -694,7 +694,7 @@ footer .span_phone {
    font-size: 18px;
    font-weight: 700;
  }
-.object_baby_care_about_text {
+.object_baby_care_about_text p{
   color: #090000;
   font-family: "Trebuchet";
   font-size: 16px;
