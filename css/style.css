@@ -676,12 +676,30 @@ footer .span_phone {
   display:  block;
 }
 
-/*====================/product page=========product selection.html *==============/
+/*====================/product page=========product selection.html *==============*/
 
+.object_baby_care_info {
+  margin-top: 30px;
+}
+.object_baby_care_info_about > a:hover {
+  text-decoration: none;
+}
 
-
-
-
+.object_baby_care_about {
+  margin-top: 30px;
+}
+.object_baby_care_about_title {
+   color: #090000;
+   font-family: "Trebuchet";
+   font-size: 18px;
+   font-weight: 700;
+ }
+.object_baby_care_about_text {
+  color: #090000;
+  font-family: "Trebuchet";
+  font-size: 16px;
+  font-weight: 400;
+}
 
 
 
