@@ -702,6 +702,115 @@ footer .span_phone {
 }
 
 
+/*=====================/page selection====purchase============================================*/
 
+
+.purchase_blank {
+  background: url('../img/purchase_blank.png') no-repeat center/100%;
+  background-size: 100% 100%;
+  height: auto;
+  padding-top: 60px;
+  padding-bottom: 150px;
+  /* border: solid 1px; */
+}
+.purchase_container {
+  max-width: 700px;
+  margin-left: 200px;
+  margin-right: 200px;
+  /* border: solid 1px; */
+}
+
+
+.purchase_blank__title p {
+  text-align: center;
+  color: #2d5d7e;
+  font-family: "RotondaBold";
+  font-size: 29px;
+  font-weight: 700;
+  /* border: solid 1px; */
+
+}
+
+.purchase_blank__form {
+  margin-top: 50px;
+}
+.purchase_blank__form > form > p > span.first_input {
+  color: #000000;
+  font-family: "Trebuchet";
+  font-size: 15px;
+  font-weight: 400;
+  display: inline-block;
+  width: 100px;
+}
+.purchase_blank__form input.fisrt_input  {
+  width: 560px;
+}
+p + .your_purchase {
+  color: #1a1a18;
+  font-family: "Trebuchet";
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.your_purchase_product {
+  text-align: center;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+.your_purchase_product_object {
+  background: url('../img/your_purchase.png') no-repeat;
+  background-size: 100% 100%;
+  width: 440px;
+  height: 70px;
+  margin-bottom: 20px;
+  padding: 5px 30px 17px 28px;
+  display: flex;
+  align-items: center;
+}
+.y_p_p_o_m {
+  margin: auto;
+  color: #090000;
+  font-family: "Trebuchet";
+  font-size: 17px;
+
+}
+#your_purchase_product_object_1 {
+  max-width: 200px;
+}
+.your_purchase_btn {
+  background: url('../img/your_purchase_btn.png') no-repeat;
+  background-size: 100% 100%;
+  width: 195px;
+  height: 40px;
+  margin-top: 10px;
+  padding:  9px 5px 10px 23px;
+  margin: 0px 10px 40px 450px;
+}
+.your_purchase_btn p {
+  color: #1a1a18;
+  font-family: "RotondaBold";
+  font-size: 17px;
+  font-weight: 700;
+}
+.your_purchase_btn > a {
+  text-decoration: none;
+}
+.your_purchase_ul {
+  margin-left: 40px;
+}
+.your_purchase_ul_ul > ul > li {
+  list-style-type:disc;
+}
+.purchase_blank__form p.second_input {
+  margin-left: 35px;
+}
+.purchase_blank__form span.hi {
+  color: #114d7f;
+  font-family: "Trebuchet";
+  font-size: 17px;
+  font-weight: 400;
+  margin-left: 10px;
+}
 
 /* end */
