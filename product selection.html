@@ -59,9 +59,12 @@
       <div class="row">
         <div class="col-lg-12"> <!--основна-->
           <div class="col-lg-12 start"><!--Начало-->
-            <div class="col-lg-12"><p><a href="index.html">Главная  » </a><a href="product page.html"> Товары для детей  »  </a><a href="product page.html"> Коляски »</a><a href=""> Детские коляски</a></p></div>
+            <div class="col-lg-12"><p><a href="index.html">Главная  » </a><a href="product page.html#cat_id=3"> Коляски »</a><a href="product selection.html#cat_id=3&id=${id}"> Детские коляски</a></p></div>
           </div>
-          <div class="object_baby_care col-lg-12">
+          <div id="content">
+
+          </div>
+          <!-- <div class="object_baby_care col-lg-12">
             <div class="object_baby_care_name  col-lg-7">
               <div><h1>Коляска-трансформер Baby Care Manhattan Air</h1></div>
             </div>
@@ -133,7 +136,7 @@
                 <p>Селин Дион, Кэтрин Зета-Джонс, британский премьер Тони Блэр, принцесса Монако Каролина, Мик Джагер, Бэкхемы, Роберт де Ниро, Брук Шилдс, Лиз Херли, Питер Гебриэл, Эль Макферсон и другие Celebrity-персоны для своих детей выбирают коляски фирмы Silver Cross.</p>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -164,9 +167,94 @@
       </div>
     </div>
   </footer>
-
+          <!-- javascript:void(0) -->
+  <script src="js/xml2json.js"></script>
   <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/jquery.tmpl.min.js"></script>
+  <script src="js/jquery.cookie.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/my.js"></script>
+
+  <script id="oneProdTmpl" type="text/x-jquery-tmpl">
+  <div class="object_baby_care col-lg-12">
+    <div class="object_baby_care_name  col-lg-7">
+      <div><h1>${title}</h1></div>
+    </div>
+    <div class="object_baby_care_info col-lg-12">
+      <div class="row">
+        <div class="object_baby_care_info_img col-lgl-4">
+          <img src="img/${image}.png" alt="baby_care.png">
+        </div>
+        <div class="object_baby_care_info_about col-lg-6">
+          <div>
+            <p>Стоимость</p>
+          </div>
+          <a href="#">
+            <div class="info_tovar_price_price">
+              <div class="info_tovar_price_price_p">
+                ${price}
+              </div>
+            </div>
+          </a>
+          <div class="lines">
+            <div class="line">
+              <div class="line1">Тип</div>
+              <div class="line2">${type}</div>
+            </div>
+            <div class="line">
+              <div class="line1">Количество блоков</div>
+              <div class="line2">${bloks}</div>
+            </div>
+            <div class="line">
+              <div class="line1">Механизм складывания</div>
+              <div class="line2">${mechanism}</div>
+            </div>
+            <div class="line">
+              <div class="line1">Количество колес</div>
+              <div class="line2">${wheel}</div>
+            </div>
+            <div class="line">
+              <div class="line1">Колеса</div>
+              <div class="line2">${material}</div>
+            </div>
+            <div class="line">
+              <div class="line1">Максимальный возраст</div>
+              <div class="line2">${age}</div>
+            </div>
+            <div class="line">
+              <div class="line1">Цвет</div>
+              <div class="line2">${color}</div>
+            </div>
+          </div>
+          <div class="info_tovar_price_status">
+            <i class="fas fa-check-circle"></i>Есть в наличии
+          </div>
+          <a href="#" data-id="${id}" data-name="${title}" data-link="purchase.html" class="buy lines_v_korziny_a">
+
+            <div class="lines_v_korziny">
+              <div class="lines_btn_v_korziny">
+                <i class="fas fa-shopping-basket"></i>Купить
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="object_baby_care_about">
+      <div class="object_baby_care_about_title">
+        Описание
+      </div>
+      <div class="object_baby_care_about_text">
+        <p>Коляска Silver Cross Balmoral — настоящее произведение искусства. Этапы производства в этой коляске включают операции, выполняемые вручную.</p>
+        <p>Селин Дион, Кэтрин Зета-Джонс, британский премьер Тони Блэр, принцесса Монако Каролина, Мик Джагер, Бэкхемы, Роберт де Ниро, Брук Шилдс, Лиз Херли, Питер Гебриэл, Эль Макферсон и другие Celebrity-персоны для своих детей выбирают коляски фирмы Silver Cross.</p>
+      </div>
+    </div>
+  </div>
+  </script>
+
+  <script>
+    new MyShop('products.xml','product');
+  </script>
 
 </body>
 </html>

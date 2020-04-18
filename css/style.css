@@ -12,9 +12,9 @@
 }
 @font-face {   /* Trebuchet */
   font-family: 'Trebuchet';
-  src: url("../fonts/Trebuchet/Trebuchet.svg#Trebuchet") format("svg"),
-       url("../fonts/Trebuchet/Trebuchet.ttf") format('truetype'),
-       url('../fonts/Trebuchet/Trebuchet.woff')  format('woff');
+  src: url("../fonts/Trebuchet/TrebuchetMS.svg#Trebuchet") format("svg"),
+       url("../fonts/Trebuchet/TrebuchetMS.ttf") format('truetype'),
+       url('../fonts/Trebuchet/TrebuchetMS.woff')  format('woff');
 }
 
 .container {
@@ -504,13 +504,11 @@ footer .span_phone {
   width: 681px;
   min-height: 262px;
 }
+
 .info_tovar_img img {
   width: 205px;
   height: 206px;
   margin: 25px 15px 30px;
-}
-.info_tovar_price {
-
 }
 
 .lines {
@@ -540,6 +538,7 @@ footer .span_phone {
   margin: 15px 0px 34px;
   border:  dashed 1px yellow;
   border-radius: 17px 0 17px 0;
+  padding-left: 10px;
 }
 .lines_v_korziny_a:hover {
   text-decoration: none;
@@ -705,7 +704,10 @@ footer .span_phone {
   font-size: 16px;
   font-weight: 400;
 }
-
+.object_baby_care_info_img img {
+  width: 312px;
+  height: 346px;
+}
 
 /*=====================/page selection====purchase============================================*/
 

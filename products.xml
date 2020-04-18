@@ -1,0 +1,122 @@
+<category id='3'>
+	<product id='1'>
+		<title>Коляска трость Babyhit Rainbow G2</title>
+		<price>1750 грн.</price>
+		<image>baby_care_1 </image>
+		<type>Обычная</type>
+		<bloks>Один</bloks>
+		<mechanism>Трость</mechanism>
+		<wheel>6</wheel>
+		<material>Резиновые</material>
+		<age>2 года</age>
+		<color>Белый</color>
+	</product>
+	<product id='2'>
+		<title>Прогулочная коляска CARRELLO Allegro</title>
+		<price>1850 грн.</price>
+		<image>baby_care_2 </image>
+		<type>Обычная</type>
+		<bloks>Два</bloks>
+		<mechanism>Трость</mechanism>
+		<wheel>6</wheel>
+		<material>Резиновые</material>
+		<age>2 года</age>
+		<color>Красный</color>
+	</product>
+	<product id='3'>
+		<title>Коляска трость Mioobaby Luna</title>
+		<price>1300 грн.</price>
+		<image>baby_care_3 </image>
+		<type>Обычная</type>
+		<bloks>Один</bloks>
+		<mechanism>Трость</mechanism>
+		<wheel>6</wheel>
+		<material>Резиновые</material>
+		<age>2 года</age>
+		<color>Синий</color>
+	</product>
+	<product id='4'>
+		<title>Коляска прогулочная CARRELLO Allegro</title>
+		<price>2320 грн.</price>
+		<image>baby_care_4 </image>
+		<type>Обычная</type>
+		<bloks>Два</bloks>
+		<mechanism>Трость</mechanism>
+		<wheel>6</wheel>
+		<material>Резиновые</material>
+		<age>3 года</age>
+		<color>Фиолетовый</color>
+	</product>
+	<product id='5'>
+		<title>Прогулочная коляска-трость El Camino Colorito</title>
+		<price>2450 грн.</price>
+		<image>baby_care_5 </image>
+		<type>Обычная</type>
+		<bloks>Один</bloks>
+		<mechanism>Трость</mechanism>
+		<wheel>8</wheel>
+		<material>Резиновые</material>
+		<age>2 года</age>
+		<color>Радуга</color>
+	</product>
+	<product id='6'>
+		<title>Прогулочная коляска Recaro EasyLife Sunshine</title>
+		<price>1900 грн.</price>
+		<image>baby_care_6 </image>
+		<type>Обычная</type>
+		<bloks>Один</bloks>
+		<mechanism>Трость</mechanism>
+		<wheel>8</wheel>
+		<material>Резиновые</material>
+		<age>4 года</age>
+		<color>Желтый</color>
+	</product>
+	<product id='7'>
+		<title>Детская коляска трость Geoby</title>
+		<price>2580 грн.</price>
+		<image>baby_care_7 </image>
+		<type>Обычная</type>
+		<bloks>Один</bloks>
+		<mechanism>Трость</mechanism>
+		<wheel>8</wheel>
+		<material>Полиуретан</material>
+		<age>2 года</age>
+		<color>Желтый</color>
+	</product>
+	<product id='8'>
+		<title>Прогулочная коляска BRITAX ROMER B-AGILE</title>
+		<price>2330 грн.</price>
+		<image>baby_care_8 </image>
+		<type>Обычная</type>
+		<bloks>Один</bloks>
+		<mechanism>Трость</mechanism>
+		<wheel>4</wheel>
+		<material>Резиновые</material>
+		<age>4 года</age>
+		<color>Черный</color>
+	</product>
+	<product id='9'>
+		<title>Коляска трость Thule Chariot Cross 1 Blue</title>
+		<price>11790 грн.</price>
+		<image>baby_care_9 </image>
+		<type>Дотерская</type>
+		<bloks>Один</bloks>
+		<mechanism>Трость</mechanism>
+		<wheel>4</wheel>
+		<material>Резиновые</material>
+		<age>1 год</age>
+		<color>Светло-синий</color>
+	</product>
+	<product id='10'>
+		<title>Детская коляска трость Babyhit Rainbow</title>
+		<price>1930 грн.</price>
+		<image>baby_care_10 </image>
+		<type>Обычная</type>
+		<bloks>Один</bloks>
+		<mechanism>Трость</mechanism>
+		<wheel>4</wheel>
+		<material>Резиновые</material>
+		<age>4 года</age>
+		<color>Белый</color>
+	</product>
+</category>

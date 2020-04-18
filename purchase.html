@@ -59,7 +59,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="col-lg-12 start"><!--Начало-->
-            <div class="col-lg-12"><p><a href="index.html">Главная  » </a><a href="product page.html"> Товары для детей  »  </a><a href="product selection.html"> Коляски » </a><a href="product page.html"> Детские коляски »</a><a href="#"> Оформление заказа</a></p></div>
+            <div class="col-lg-12"><p><a href="index.html">Главная  » </a><a href="product page.html#cat_id=3"> Коляски » </a><a href="product selection.html#cat_id=3&id=${id}"> Детские коляски »</a><a href="#"> Оформление заказа</a></p></div>
           </div>
           <div class="purchase_blank">
             <div class="purchase_container">
@@ -74,18 +74,21 @@
                   <p><span class="first_input">E-mail: </span><input class="fisrt_input" type="email" placeholder="what is your e-mail?"></p>
                   <p class="your_purchase">Ваш заказ:</p>
                   <div class="your_purchase_product">
-                    <div class="your_purchase_product_object">  <!-- <i class="fas fa-times-circle"></i> -->
+                    <div id="content">
+
+                    </div>
+                    <!-- <div class="your_purchase_product_object">
                       <div class="y_p_p_o_m" id="your_purchase_product_object_1">Коляска Chicco Lite Way stroller Red Passion</div>
                       <div class="y_p_p_o_m">1 шт.</div>
                       <div class="y_p_p_o_m">14900 Р.</div>
                       <div class="y_p_p_o_m"><a href="javascript:void(0)"><i class="fas fa-times-circle"></i></a></div>
                     </div>
-                    <div class="your_purchase_product_object">  <!-- <i class="fas fa-times-circle"></i> -->
+                    <div class="your_purchase_product_object">
                       <div class="y_p_p_o_m" id="your_purchase_product_object_1">Коляска Chicco Lite Way stroller Red Passion</div>
                       <div class="y_p_p_o_m">1 шт.</div>
                       <div class="y_p_p_o_m">14900 Р.</div>
                       <div class="y_p_p_o_m"><a href="javascript:void(0)"><i class="fas fa-times-circle"></i></a></div>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="your_purchase_ul">
                     <div class="your_purchase_ul__title">
@@ -139,8 +142,27 @@
     </div>
   </footer>
 
+  <script src="js/xml2json.js"></script>
   <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/jquery.tmpl.min.js"></script>
+  <script src="js/jquery.cookie.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/my.js"></script>
+
+  <script id="cartTmpl" type="text/x-jquery-tmpl">
+  {{each cart}}
+    <div class="your_purchase_product_object">
+      <div class="y_p_p_o_m" id="your_purchase_product_object_1">${title}</div>
+      <div class="y_p_p_o_m">${qty}</div>
+      <div class="y_p_p_o_m">${totalprice}</div>
+      <div class="y_p_p_o_m"><a href="#"><i class="fas fa-times-circle cross" data-id="${id}"></i></a></div>
+    </div>
+  {{/each}}
+  </script>
+
+  <script>
+    new MyShop('products.xml','cart');
+  </script>
 
 </body>
 </html>
