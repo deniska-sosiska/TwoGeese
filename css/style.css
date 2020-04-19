@@ -241,15 +241,18 @@ a:hover {
 }
 .cloud p {
   font-size: 14px;
-  font-family: RotondaC;
+  font-family: 'RotondaC';
   margin: 0px;
-  /* width: 100%; */
+  padding: 0px;
+}
+.cloud p:first-child {
+  padding-top: 5px;
 }
 .cloud button {
   background: #3da0d1;
   line-height: 10%;
   height: 35px;
-  margin-top: 10px;
+  margin-top: 2px;
   margin-left: 8px;
   font-family: RotondaC;
   font-weight: bold;
@@ -594,8 +597,10 @@ footer .span_phone {
 
 .end {
   background: url('../img/bg_for_start.png') 0 0 no-repeat ;
-  width: 681px;
+  width: 755px;
   height: 64px;
+  background-size: 100% 100%;
+
 
 }
 .end input {
