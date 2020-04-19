@@ -6,6 +6,7 @@
   <title>Торговый дом "2 Гуся"</title>
   <link rel="stylesheet" href="fonts/fontawesome/all.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
   <!-- <link rel="stylesheet" href="css/jquery-ui.min.css"> -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -470,7 +471,17 @@
               <div class="filter">
                 <div class="blank_title">
                   <p>Цена, руб.</p>
-                  <p>я бы доделал, но времени ноль</p>
+                  <div class="filter-price d-flex">
+        							<p class="d-flex">
+        							  	<label for="amount-1" class="m-2">от</label>
+        							  	<input type="text" id="amount-1" readonly>
+        							</p>
+        							<p class="d-flex">
+        							  	<label for="amount-2" class="m-2">до</label>
+        							  	<input type="text" id="amount-2" readonly>
+        							</p>
+        						</div>
+        						<div id="slider-range"></div>
                 </div>
               </div>
             </div>
@@ -638,7 +649,7 @@
                                     <div class="col-5 col-md-3 foot "><div class="pp"><i class="fas fa-phone-alt"></i><span class="span_phone">8 (916)</span> 227 1234</div></div>
                                     <div class="col-5 col-md-3 foot ">
                                       <div><a href="#" class="bg_for_i"><i class="fab fa-twitter i"></i></a></div>
-                                      <div><a href="https://vk.com/audios179631805" class="bg_for_i"><i class="fab fa-vk"></i></a></div>
+                                      <div><a href="https://vk.com/audios179631805" target="_blank" class="bg_for_i"><i class="fab fa-vk"></i></a></div>
                                       <div><a href="#" class="bg_for_i"><i class="fab fa-facebook-f ii"></i></a></div>
                                       <div><a href="#" class="bg_for_i"><i class="fas fa-pencil-alt"></i></a></div>
                                       <div><a href="#" class="bg_for_i"><i class="fas fa-wifi"></i></a></div>
@@ -656,6 +667,7 @@
 
                           <script src="js/jquery-3.5.0.min.js"></script>
                           <script src="js/xml2json.js"></script>
+                        	<script src="js/jquery-ui.min.js"></script>
                           <script src="js/jquery.tmpl.min.js"></script>
                           <script src="js/jquery.cookie.js"></script>
                           <script src="js/main.js"></script>
