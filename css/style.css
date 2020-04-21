@@ -24,18 +24,38 @@
 body {
   background-color: #cceeff;
   -webkit-overflow-scrolling: touch;
-	font-family: Trebuchet;
+	font-family: 'Trebuchet';
 }
 header {
-  background: url("../img/background-head.png") repeat;
-  height: 237px;
+  background: url("../img/background-head.png") repeat no-repeat;
+  height: auto;
+  background-size: auto 100%;
+  min-height: 237px;
   margin-bottom: 100px;
 }
 section .main {
   padding: 0;
   margin: 0;
 }
-
+* {
+  /* -webkit-overflow-scrolling: touch; */
+}
+header .col-8, header .col-10 {
+  /* height: auto; */
+  /* margin-top: 20px; */
+  /* border: solid 1px; */
+}
+header .col-10 {
+  /* margin-top: 70px; */
+}
+#dark_theme {
+  position: absolute;
+  top: 22px;
+  right: 35px;
+  font-size: 22px;
+  border: solid 1px;
+  /* display: none; */
+}
 
 /*=============================== index.html=================================================*/
 .columnsn {
@@ -299,7 +319,7 @@ a:hover {
   flex-direction: column;
 }
 .news h4, .brand h4 {
-  align-self: center;
+  /* align-self: center; */
 }
 .date {
 	background: url('../img/date.png') no-repeat;
@@ -419,6 +439,15 @@ footer .span_phone {
   .Delivery_Advertising img {
     height: 190px;
   }
+  header {
+    background-size: auto 100%;
+    margin-bottom: 30px;
+  }
+  header .col-10 {
+    display: none;
+    margin-top: 20px;
+    height: auto;
+  }
 }
 @media screen and (max-width: 452px){
   .Delivery_Advertising img {
@@ -433,6 +462,9 @@ footer .span_phone {
 @media screen and (max-width: 370px){
   .Delivery_Advertising img {
     height: 130px;
+  }
+  header .col-12 {
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 330px){
