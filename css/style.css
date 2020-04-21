@@ -32,6 +32,7 @@ header {
   background-size: auto 100%;
   min-height: 237px;
   margin-bottom: 100px;
+  /* border: solid 1px; */
 }
 section .main {
   padding: 0;
@@ -40,7 +41,9 @@ section .main {
 * {
   -webkit-overflow-scrolling: touch;
 }
-
+#head_menu {
+  display: flex;
+}
 
 /*=============================== index.html=================================================*/
 .columnsn {
@@ -50,6 +53,8 @@ section .main {
   justify-content: center;
   height: 210px;
   /* padding: 10px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .columnsn_2 {
   display: flex;
@@ -57,6 +62,8 @@ section .main {
   align-items: center;
   justify-content: center;
   height: 210px;
+  padding-bottom: 20px;
+  /* padding-top: 10px; */
 }
 .site_search {
   position: relative;
@@ -393,11 +400,6 @@ footer .span_phone {
 @media screen and (max-width: 1024px){
   .Delivery_Advertising img {
     height: 115px;
-  }
-}
-@media screen and (max-width: 1100px){
-  .Delivery_Advertising img {
-    height: 105px;
   }
 }
 @media screen and (max-width: 991px){
