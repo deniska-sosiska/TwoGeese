@@ -1,40 +1,40 @@
 {
-    "name": "Two Geese",
-    "short_name": "TwGs",
-    "description": "Progressive Web App that lists games submitted to the A-Frame category in the js13kGames 2020 competition.",
-    "icons": [
-        {
-            "src": "img/icons/TwoGeeseIcons16.png",
-            "sizes": "16x16",
-            "type": "image/png"
-        },
-        {
-            "src": "img/icons/TwoGeeseIcons32.png",
-            "sizes": "32x32",
-            "type": "image/png"
-        },
-        {
-            "src": "img/icons/TwoGeeseIcons64.png",
-            "sizes": "64x64",
-            "type": "image/png"
-        },
-        {
-            "src": "img/icons/TwoGeeseIcons128.png",
-            "sizes": "128x128",
-            "type": "image/png"
-        },{
-            "src": "img/icons/TwoGeeseIcons256.png",
-            "sizes": "256x256",
-            "type": "image/png"
-        },
-        {
-            "src": "img/icons/TwoGeeseIcons512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
+  "name": "Two Geese",
+  "short_name": "TwGs",
+  "description": "Progressive Web App that lists games submitted to the A-Frame category in the js13kGames 2020 competition.",
+  "icons": [
+    {
+      "src": "img/icons/TwoGeeseIcons16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/TwoGeeseIcons32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/TwoGeeseIcons64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/TwoGeeseIcons128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+      },{
+        "src": "img/icons/TwoGeeseIcons256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      },
+      {
+        "src": "img/icons/TwoGeeseIcons512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
     ],
     "start_url": "index.html",
     "display": "fullscreen",
     "theme_color": "#fff",
     "background_color": "#fff"
-}
+  }
