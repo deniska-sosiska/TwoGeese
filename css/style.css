@@ -348,9 +348,11 @@ a:hover {
 }
 
 footer {
-  background: url("../img/background-footer.png") 0 30px repeat-x;
-  height: 211px;
+  background: url("../img/background-footer.png") 0 30px repeat no-repeat;
   margin-top: 50px;
+  height: auto;
+  background-size: auto 100%;
+  /* min-height: 237px; */
   /* border: solid 1px; */
 }
 footer  i {
@@ -366,6 +368,7 @@ footer .span_phone {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .foot:last-child {
   margin: 0;
@@ -416,6 +419,43 @@ footer .span_phone {
   .Delivery_Advertising img {
     height: 140px;
   }
+  #head_menu {
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .columnsn {
+    margin-top: 20px;
+
+  }
+  header {
+    margin-bottom: 30px;
+  }
+  .foot {
+    height: auto;
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+  /* .line {
+    display: none;
+    width: 250px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1a1a18;
+    font-family: "Trebuchet";
+  }
+  .line {
+    border-bottom: 1px dashed grey;
+    border: solid 1px;
+  }
+  .line1 {
+    width: 165px;
+  }
+  .line2 {
+    padding-left: 10px;
+  }
+  .info_tovar {
+    border: solid 1px;
+  } */
 }
 @media screen and (max-width: 663px){
   .Delivery_Advertising img {
@@ -508,44 +548,59 @@ footer .span_phone {
   font-weight: 700;
 }
 
+
 .info_tovar {
   display: flex;
   background: url('../img/bg_for_tovar.png') no-repeat center/100%;
-  width: 681px;
-  min-height: 262px;
+  width: auto;
+  min-height: auto;
+  background-size: 100% 100%;
+  padding: 10% 0;
 }
 
 .info_tovar_img img {
+  width: 100%;
+  height: 100%;
   width: 205px;
   height: 206px;
-  margin: 25px 15px 30px;
 }
 
 .lines {
-  margin-top: 31px;
+  /* border: solid 1px; */
 }
 .line {
+  /* border: solid 1px; */
   display: flex;
-  width: 280px;
-  font-size: 14px;
+  /* justify-content: space-between; */
+  /* width: 280px; */
+  /* font-size: 14px; */
   font-weight: 400;
   color: #1a1a18;
   font-family: "Trebuchet";
 }
 .line {
-  border-bottom: 1px dashed grey;
+  border: solid 1px;
+
+  /* border-bottom: 1px dashed grey; */
+}
+.line {
+  /* max-width: 100px; */
 }
 .line1 {
-  width: 175px;
+  border: solid 1px;
+  width: 200px;
+
 }
 .line2 {
-  padding-left: 10px;
+  /* margin-left: 100%; */
+  border: solid 1px;
+
 }
 .lines_v_korziny {
   background: url('../img/bg_price_yellow.png') -1px 0 no-repeat;
   width: 134px;
   height: 35px;
-  margin: 15px 0px 34px;
+  /* margin: 15px 0px 34px; */
   border:  dashed 1px yellow;
   border-radius: 17px 0 17px 0;
   padding-left: 10px;
@@ -563,7 +618,7 @@ footer .span_phone {
 .lines_btn_v_korziny i {
   margin-right: 5px;
 }
-
+/*
 .info_tovar_price {
   margin: 33px 0px 30px 25px;
 }
@@ -600,7 +655,7 @@ footer .span_phone {
 }
 .info_tovar_price > a:hover {
   text-decoration: none;
-}
+} */
 
 .end {
   background: url('../img/bg_for_start.png') 0 0 no-repeat ;

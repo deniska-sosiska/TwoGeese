@@ -7,7 +7,7 @@
 		<bloks>Один</bloks>
 		<mechanism>Трость</mechanism>
 		<wheel>6</wheel>
-		<material>Резиновые</material>
+		<material>Резин.</material>
 		<age>2 года</age>
 		<color>Белый</color>
 	</product>
@@ -19,7 +19,7 @@
 		<bloks>Два</bloks>
 		<mechanism>Трость</mechanism>
 		<wheel>6</wheel>
-		<material>Резиновые</material>
+		<material>Резин.</material>
 		<age>2 года</age>
 		<color>Красный</color>
 	</product>
@@ -31,7 +31,7 @@
 		<bloks>Один</bloks>
 		<mechanism>Трость</mechanism>
 		<wheel>6</wheel>
-		<material>Резиновые</material>
+		<material>Резин.</material>
 		<age>2 года</age>
 		<color>Синий</color>
 	</product>
@@ -43,9 +43,9 @@
 		<bloks>Два</bloks>
 		<mechanism>Трость</mechanism>
 		<wheel>6</wheel>
-		<material>Резиновые</material>
+		<material>Резин.</material>
 		<age>3 года</age>
-		<color>Фиолетовый</color>
+		<color>Фиолет.</color>
 	</product>
 	<product id='5'>
 		<title>Прогулочная коляска-трость El Camino Colorito</title>
@@ -55,7 +55,7 @@
 		<bloks>Один</bloks>
 		<mechanism>Трость</mechanism>
 		<wheel>8</wheel>
-		<material>Резиновые</material>
+		<material>Резин.</material>
 		<age>2 года</age>
 		<color>Радуга</color>
 	</product>
@@ -67,7 +67,7 @@
 		<bloks>Один</bloks>
 		<mechanism>Трость</mechanism>
 		<wheel>8</wheel>
-		<material>Резиновые</material>
+		<material>Резин.</material>
 		<age>4 года</age>
 		<color>Желтый</color>
 	</product>
@@ -79,7 +79,7 @@
 		<bloks>Один</bloks>
 		<mechanism>Трость</mechanism>
 		<wheel>8</wheel>
-		<material>Полиуретан</material>
+		<material>Полиур.</material>
 		<age>2 года</age>
 		<color>Желтый</color>
 	</product>
@@ -91,7 +91,7 @@
 		<bloks>Один</bloks>
 		<mechanism>Трость</mechanism>
 		<wheel>4</wheel>
-		<material>Резиновые</material>
+		<material>Резин.</material>
 		<age>4 года</age>
 		<color>Черный</color>
 	</product>
@@ -103,9 +103,9 @@
 		<bloks>Один</bloks>
 		<mechanism>Трость</mechanism>
 		<wheel>4</wheel>
-		<material>Резиновые</material>
+		<material>Резин.</material>
 		<age>1 год</age>
-		<color>Светло-синий</color>
+		<color>Свл-син.</color>
 	</product>
 	<product id='10'>
 		<title>Детская коляска трость Babyhit Rainbow</title>
@@ -115,7 +115,7 @@
 		<bloks>Один</bloks>
 		<mechanism>Трость</mechanism>
 		<wheel>4</wheel>
-		<material>Резиновые</material>
+		<material>Резин.</material>
 		<age>4 года</age>
 		<color>Белый</color>
 	</product>
