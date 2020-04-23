@@ -404,6 +404,9 @@ footer .span_phone {
   .Delivery_Advertising img {
     height: 115px;
   }
+  .logo_footer {
+    display: none;
+  }
 }
 @media screen and (max-width: 991px){
   .Delivery_Advertising img {
@@ -425,7 +428,6 @@ footer .span_phone {
   }
   .columnsn {
     margin-top: 20px;
-
   }
   header {
     margin-bottom: 30px;
@@ -443,6 +445,16 @@ footer .span_phone {
   .info_tovar_price {
     text-align: center;
   }
+  footer {
+    height: 160px;
+    padding-top: 12%;
+  }
+}
+@media screen and (max-width: 767px){
+  footer {
+    height: auto;
+    padding-top: 0px;
+  }
 }
 @media screen and (max-width: 663px){
   .Delivery_Advertising img {
@@ -455,6 +467,9 @@ footer .span_phone {
   }
   .lines_v_korziny_a {
     padding-left: 63%;
+  }
+  .logo_footer {
+    display: flex;
   }
 }
 @media screen and (max-width: 452px){
@@ -486,9 +501,7 @@ footer .span_phone {
     height: 115px;
   }
 }
-.col-6 {
-  /* border: solid 1px; */
-}
+
 /*=============================== /index.html===product page===================================*/
 
 .main h1 {
@@ -558,12 +571,15 @@ footer .span_phone {
   background-size: 100% 100%;
   padding: 5% 0;
 }
-
+.info_tovar_img {
+  text-align: center;
+}
 .info_tovar_img img {
   width: 100%;
   height: 100%;
   width: 205px;
   height: 206px;
+  margin: 0 auto;
 }
 
 .line {
