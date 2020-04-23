@@ -301,7 +301,7 @@
                   <h4>Список брендов</h4>
                   <div class="row">
                     <div class="col">
-                      <ul>
+                      <!-- <ul>
                         <li><a href="#">zxc</a></li>
                         <li><a href="#">zxc</a></li>
                         <li><a href="#">zxc</a></li>
@@ -322,10 +322,10 @@
                         <li><a href="#">zxc</a></li>
                         <li><a href="#">zxc</a></li>
                         <li><a href="#">zxc</a></li>
-                      </ul>
+                      </ul> -->
                     </div>
                     <div class="col">
-                      <ul>
+                      <!-- <ul>
                         <li><a href="#">zxc</a></li>
                         <li><a href="#">zxc</a></li>
                         <li><a href="#">zxc</a></li>
@@ -345,7 +345,7 @@
                         <li><a href="#">zxc</a></li>
                         <li><a href="#">zxc</a></li>
                         <li><a href="#">zxc</a></li>
-                      </ul>
+                      </ul> -->
                     </div>
                   </div>
                 </div><!--Бренды-->
@@ -407,6 +407,22 @@
     <script src="js/jquery.tmpl.min.js"></script>
     <script src="js/jquery.cookie.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        fetch('https://restcountries.eu/rest/v2/regionalbloc/eu').then((response) =>{
+          return response.json();
+        }).then((resp) => {
+          const listOfCapitals = document.createElement('ul');
+          listOfCapitals.classList.add('col');
+          resp.forEach(function(item) {
+            var listViewItem = document.createElement('li');
+            listViewItem.appendChild(document.createTextNode(item.capital));
+            listOfCapitals.appendChild(listViewItem);
+          });
+          listOfCapitals.style.columnCount=2;
+          document.getElementsByClassName("brand background_blank for_flex_2")[0].getElementsByClassName("col")[0].appendChild(listOfCapitals);
+        });
+  </script>
 
   </body>
   </html>
