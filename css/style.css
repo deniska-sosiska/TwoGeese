@@ -435,27 +435,14 @@ footer .span_phone {
     margin-top: 0;
     padding-bottom: 20px;
   }
-  /* .line {
-    display: none;
-    width: 250px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #1a1a18;
-    font-family: "Trebuchet";
+  .lines_v_korziny_a {
+    width: 100%;
+    padding-left: 70%;
+    padding-top: 2%;
   }
-  .line {
-    border-bottom: 1px dashed grey;
-    border: solid 1px;
+  .info_tovar_price {
+    text-align: center;
   }
-  .line1 {
-    width: 165px;
-  }
-  .line2 {
-    padding-left: 10px;
-  }
-  .info_tovar {
-    border: solid 1px;
-  } */
 }
 @media screen and (max-width: 663px){
   .Delivery_Advertising img {
@@ -466,20 +453,32 @@ footer .span_phone {
   .Delivery_Advertising img {
     height: 190px;
   }
+  .lines_v_korziny_a {
+    padding-left: 63%;
+  }
 }
 @media screen and (max-width: 452px){
   .Delivery_Advertising img {
     height: 170px;
+  }
+  .lines_v_korziny_a {
+    padding-left: 55%;
   }
 }
 @media screen and (max-width: 415px){
   .Delivery_Advertising img {
     height: 150px;
   }
+  .lines_v_korziny_a {
+    padding-left: 51%;
+  }
 }
 @media screen and (max-width: 370px){
   .Delivery_Advertising img {
     height: 130px;
+  }
+  .lines_v_korziny_a {
+    padding-left: 48%;
   }
 }
 @media screen and (max-width: 330px){
@@ -487,7 +486,9 @@ footer .span_phone {
     height: 115px;
   }
 }
-
+.col-6 {
+  /* border: solid 1px; */
+}
 /*=============================== /index.html===product page===================================*/
 
 .main h1 {
@@ -555,7 +556,7 @@ footer .span_phone {
   width: auto;
   min-height: auto;
   background-size: 100% 100%;
-  padding: 10% 0;
+  padding: 5% 0;
 }
 
 .info_tovar_img img {
@@ -565,45 +566,30 @@ footer .span_phone {
   height: 206px;
 }
 
-.lines {
-  /* border: solid 1px; */
-}
 .line {
-  /* border: solid 1px; */
   display: flex;
-  /* justify-content: space-between; */
-  /* width: 280px; */
-  /* font-size: 14px; */
   font-weight: 400;
   color: #1a1a18;
   font-family: "Trebuchet";
-}
-.line {
-  border: solid 1px;
-
-  /* border-bottom: 1px dashed grey; */
-}
-.line {
-  /* max-width: 100px; */
+  border-bottom: 1px dashed grey;
+  max-width: 100%;
 }
 .line1 {
-  border: solid 1px;
-  width: 200px;
-
+  width: 73%;
 }
 .line2 {
-  /* margin-left: 100%; */
-  border: solid 1px;
+  width: 27%;
+
 
 }
 .lines_v_korziny {
   background: url('../img/bg_price_yellow.png') -1px 0 no-repeat;
   width: 134px;
   height: 35px;
-  /* margin: 15px 0px 34px; */
+  margin: 20px 10px 0px;
   border:  dashed 1px yellow;
   border-radius: 17px 0 17px 0;
-  padding-left: 10px;
+  padding-left: 2%;
 }
 .lines_v_korziny_a:hover {
   text-decoration: none;
@@ -618,9 +604,11 @@ footer .span_phone {
 .lines_btn_v_korziny i {
   margin-right: 5px;
 }
-/*
+
 .info_tovar_price {
-  margin: 33px 0px 30px 25px;
+  margin: 33px 0px;
+  padding-left: 30px;
+  /* border: solid 1px; */
 }
 .info_tovar_price_status {
   color: #aec905;
@@ -629,7 +617,7 @@ footer .span_phone {
   font-weight: 700;
 }
 .info_tovar_price_status i {
-  margin-right: 7px;
+  /* margin-right: 7px; */
   font-size: 16px;
 }
 
@@ -637,7 +625,7 @@ footer .span_phone {
   text-decoration: line-through;
   margin-top: 10px;
   margin-bottom: 11px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 .info_tovar_price_price {
   background: url('../img/bg_price_blue.png') -1px 0 no-repeat;
@@ -651,11 +639,11 @@ footer .span_phone {
   font-family: "RotondaBold";
   font-size: 18px;
   font-weight: 700;
-  margin: 3px 0px 0px 20px;
+  margin: 3px 0px 0px 11%;
 }
 .info_tovar_price > a:hover {
   text-decoration: none;
-} */
+}
 
 .end {
   background: url('../img/bg_for_start.png') 0 0 no-repeat ;
