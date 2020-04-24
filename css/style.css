@@ -141,6 +141,18 @@ header  .span_phone {
   margin-left: 10px;
   color: #4a8cbf;
 }
+
+.subscribe {
+  border-radius: 40%;
+  background-color: #fff;
+  border: solid 0px;
+  color: #3a617f;
+}
+.subscribe:hover {
+  border: solid 1px;
+  border-color: #305069;
+}
+
 .bg_head {
   font-size: 13px;
   background: url('../img/bg_head.png') no-repeat center/100%;

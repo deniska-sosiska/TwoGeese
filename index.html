@@ -9,13 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
   <link rel="manifest" href="manifest.json">
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js').then(function() {
-        console.log('Service worker registered!');
-      });
-    }
-  </script>
+
 </head>
 <body>
 
@@ -54,6 +48,7 @@
           <div class="bg_head for_p2">
             <a href="#"><p>Заказать обратный звонок</p><i class="fas fa-mobile-alt"></i></a>
           </div>
+          <button class="subscribe">Subscribe for push notification</button>
         </div>
         <div class="col-12 offset-0 order-3 order-md-2 offset-sm-0 col-md-4 col-lg-6 head_logo">
           <img class="img-fluid img-responsive" src="img/Логотип.png" alt="###">
@@ -216,7 +211,6 @@
 
               </div> <!-- Конец второго блока -->
               <div class="row col-12 col-sm-12 col-lg-4 align-content-start"> <!--Третий блок-->
-                <!-- <div class="col-12 col-sm-6 col-lg-12"> -->
 
                 <div class="col-12 col-sm-6 col-lg-12 order-sm-2 order-lg-1">
                   <div class="object_li">
@@ -280,7 +274,6 @@
                   </div>
                 </div>
 
-                <!-- </div> -->
               </div> <!-- Конец третьего блока -->
               <div class="col-12 advertising"><!--Реклама-->
                 <a href="#"><img class="img-responsive img-fluid" src="img/Реклама.png" alt="Реклама"></a>
@@ -299,53 +292,8 @@
                 <div class="brand background_blank for_flex_2">
                   <h4>Список брендов</h4>
                   <div class="row">
-                    <div class="col">
-                      <!-- <ul>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                      </ul> -->
-                    </div>
-                    <div class="col">
-                      <!-- <ul>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                        <li><a href="#">zxc</a></li>
-                      </ul> -->
-                    </div>
+                    <div class="col">  </div>
+                    <div class="col">  </div>
                   </div>
                 </div><!--Бренды-->
               </div>
@@ -408,20 +356,53 @@
     <script src="js/main.js"></script>
 
     <script>
-        fetch('https://restcountries.eu/rest/v2/regionalbloc/eu').then((response) =>{
-          return response.json();
-        }).then((resp) => {
-          const listOfCapitals = document.createElement('ul');
-          listOfCapitals.classList.add('col');
-          resp.forEach(function(item) {
-            var listViewItem = document.createElement('li');
-            listViewItem.appendChild(document.createTextNode(item.capital));
-            listOfCapitals.appendChild(listViewItem);
-          });
-          listOfCapitals.style.columnCount=2;
-          document.getElementsByClassName("brand background_blank for_flex_2")[0].getElementsByClassName("col")[0].appendChild(listOfCapitals);
+    fetch('https://restcountries.eu/rest/v2/regionalbloc/eu').then((response) =>{
+      return response.json();
+    }).then((resp) => {
+      const listOfCapitals = document.createElement('ul');
+      listOfCapitals.classList.add('col');
+      resp.forEach(function(item) {
+        var listViewItem = document.createElement('li');
+        listViewItem.appendChild(document.createTextNode(item.capital));
+        listOfCapitals.appendChild(listViewItem);
+      });
+      listOfCapitals.style.columnCount=2;
+      document.getElementsByClassName("brand background_blank for_flex_2")[0].getElementsByClassName("col")[0].appendChild(listOfCapitals);
+    });
+    </script>
+
+    <script>
+    function askPermission(){
+      return new Promise(function(resolve,reject){
+        const permissionResult = Notification.requestPermission(function(result){
+          resolve(result);
         });
-  </script>
+
+        if (permissionResult){
+          permissionResult.then(resolve, reject);
+        }
+      })
+
+      .then(function(permissionResult){
+        if (permissionResult !== 'granted'){
+          throw new Error('We werent granted permission.');
+        }
+      });
+    }
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').then(function() {
+        console.log('Service worker registered!');
+      });
+      navigator.serviceWorker.ready.then(registration => {
+        if ('PushManager' in window){
+          document.querySelector('button.subscribe')
+          .addEventListener('click',() => {
+            askPermission()
+          });
+        }
+      });
+    }
+    </script>
 
   </body>
   </html>
